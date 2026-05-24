@@ -1,11 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seena Simkani | Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-  Personal website under construction. Please check back later!
+  <!-- Navigation -->
+  <header class="nav-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">SS</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Seena Simkani.</h1>
+      <h2 class="hero-subtitle">I build things for the web.</h2>
+      <p class="hero-description">
+        A software developer passionate about crafting clean, accessible, and
+        performant web experiences. I love turning complex problems into
+        simple, elegant solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <ul class="hero-socials">
+        <li><a href="https://github.com/ssimkani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/ssimkani" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:ssimkani@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a software developer with a passion for building digital
+            experiences that are both functional and delightful. My journey
+            into tech started with curiosity about how websites work, and
+            has since grown into a full-fledged career crafting web
+            applications, tools, and systems.
+          </p>
+          <p>
+            I specialize in modern frontend and backend technologies, and
+            I'm always eager to learn something new. Whether it's
+            architecting a scalable API or polishing a pixel-perfect UI,
+            I bring attention to detail and a problem-solving mindset to
+            everything I build.
+          </p>
+          <p>Here are some technologies I've been working with recently:</p>
+          <ul class="skills-list">
+            <li>JavaScript / TypeScript</li>
+            <li>React &amp; Next.js</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>PostgreSQL</li>
+            <li>Tailwind CSS</li>
+            <li>Docker</li>
+            <li>Git &amp; CI/CD</li>
+          </ul>
+        </div>
+        <div class="about-photo">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">02.</span> Where I've Worked</h2>
+      <div class="experience-grid">
+        <div class="experience-item">
+          <div class="exp-date">2024 — Present</div>
+          <div class="exp-content">
+            <h3 class="exp-role">Software Developer <span class="exp-company">@ Current Company</span></h3>
+            <p class="exp-desc">
+              Building and maintaining modern web applications. Collaborating
+              closely with design and product teams to ship features that
+              deliver real value to users.
+            </p>
+            <ul class="exp-tech">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="exp-date">2023 — 2024</div>
+          <div class="exp-content">
+            <h3 class="exp-role">Junior Developer <span class="exp-company">@ Previous Company</span></h3>
+            <p class="exp-desc">
+              Contributed to frontend and backend features, wrote automated
+              tests, and participated in code reviews. Helped migrate legacy
+              pages to a modern React-based stack.
+            </p>
+            <ul class="exp-tech">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="exp-date">2022 — 2023</div>
+          <div class="exp-content">
+            <h3 class="exp-role">Freelance Web Developer</h3>
+            <p class="exp-desc">
+              Designed and developed websites for small businesses and
+              personal projects. Managed client relationships and delivered
+              projects on time and within scope.
+            </p>
+            <ul class="exp-tech">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="resume-link">
+        <a href="#" class="btn btn-primary"><i class="fas fa-file-alt"></i> View Full Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">03.</span> Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/ssimkani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Project Name</h3>
+          <p class="project-desc">
+            A brief description of what this project does — the problem it
+            solves, the tech stack used, and what made it interesting to build.
+          </p>
+          <ul class="project-tech">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/ssimkani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Another Project</h3>
+          <p class="project-desc">
+            Description of another project. Highlight the key features,
+            technologies, and your role in building it.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/ssimkani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="External link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Yet Another Project</h3>
+          <p class="project-desc">
+            A third project card to showcase more of your work. Each card
+            follows the same clean, consistent design pattern.
+          </p>
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>Firebase</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-content">
+      <h2 class="section-title centered"><span class="section-number">04.</span> Get In Touch</h2>
+      <p class="contact-text">
+        I'm currently looking for new opportunities and would love to hear
+        from you. Whether you have a project in mind, a question, or just
+        want to say hi — my inbox is always open.
+      </p>
+      <a href="mailto:ssimkani@example.com" class="btn btn-primary btn-large">
+        <i class="fas fa-paper-plane"></i> Say Hello
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-socials">
+        <li><a href="https://github.com/ssimkani" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/ssimkani" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:ssimkani@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+      <p class="footer-text">
+        Designed &amp; Built by Seena Simkani &copy; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
